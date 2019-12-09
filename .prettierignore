@@ -1,0 +1,10 @@
+**/node_modules/**
+
+# cache-dirs
+**/.cache
+
+# ignore built packages
+# packages/**/*.js
+# !packages/gatsby/cache-dir/**/*.js
+# !packages/*/src/**/*.js
+# packages/gatsby/cache-dir/commonjs/**/*.js

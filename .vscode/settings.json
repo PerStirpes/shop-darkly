@@ -1,0 +1,4 @@
+{
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.hexColorLength": "warning"
+}

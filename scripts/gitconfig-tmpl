@@ -1,0 +1,6 @@
+[user]
+    name = $(id -P $(stat -f%Su /dev/console) | cut -d : -f 8)
+    email = $EMAIL_ADDR
+
+[url \"git@github.com:\"]
+    insteadOf = https://github.com/

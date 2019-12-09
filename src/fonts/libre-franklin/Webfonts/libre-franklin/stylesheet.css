@@ -1,0 +1,17 @@
+/* libre-franklin-regular - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: bold;
+  src: url('libre-franklin-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'),
+    url('libre-franklin-v3-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('libre-franklin-v3-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('libre-franklin-v3-latin-regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('libre-franklin-v3-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('libre-franklin-v3-latin-regular.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+}

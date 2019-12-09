@@ -1,0 +1,14 @@
+# template for setting up your .gitconfig
+[user]
+	name = Matt Barraza-Carl
+	username = PerStirpes
+    email = mbarrazacarl@launchdarkly.com
+
+[github]
+	user = PerStirpes
+
+[core]
+    editor = code
+  
+
+

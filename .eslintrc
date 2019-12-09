@@ -1,0 +1,236 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["prettier", "react", "emotion"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "spyOn": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-console": "off",
+    "no-inner-declarations": "off",
+    "valid-jsdoc": "off",
+    "require-jsdoc": "off",
+    "quotes": ["error", "single"],
+    "import/no-unresolved": "off",
+    "react/jsx-pascal-case": "off",
+    "import/order": "off",
+    "babel/camelcase": "off",
+    "jsx-a11y/label-has-for": "off",
+    "max-lines-per-function": "off",
+    "consistent-return": ["error"],
+    "no-extra-semi": "error",
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      { "requireReturnForObjectLiteral": true }
+    ],
+    "jsx-quotes": ["error", "prefer-double"],
+    "object-curly-spacing": ["error", "always"],
+    "no-duplicate-imports": "error",
+
+    // http://eslint.org/docs/rules/array-callback-return
+    "array-callback-return": "error",
+
+    // http://eslint.org/docs/rules/curly
+    "curly": ["error", "all"],
+
+    // http://eslint.org/docs/rules/no-eval
+    "no-eval": "error",
+
+    // http://eslint.org/docs/rules/no-implied-eval
+    "no-implied-eval": "error",
+
+    // http://eslint.org/docs/rules/no-param-reassign
+    "no-param-reassign": ["error", { "props": true }],
+
+    // http://eslint.org/docs/rules/no-return-assign
+    "no-return-assign": "error",
+
+    // http://eslint.org/docs/rules/no-self-compare
+    "no-self-compare": "error",
+
+    // http://eslint.org/docs/rules/radix
+    "radix": "error",
+
+    // http://eslint.org/docs/rules/no-array-constructor
+    "no-array-constructor": "error",
+
+    // http://eslint.org/docs/rules/no-new-wrappers
+    "no-new-wrappers": "error",
+
+    // http://eslint.org/docs/rules/no-cond-assign
+    "no-cond-assign": "error",
+
+    // http://eslint.org/docs/rules/no-use-before-define
+    "no-use-before-define": ["error", { "functions": false }],
+
+    // https://eslint.org/docs/rules/no-undef
+    "no-undef": "error",
+
+    // http://eslint.org/docs/rules/eqeqeq
+    "eqeqeq": "error",
+
+    // http://eslint.org/docs/rules/no-new-object
+    "no-new-object": "error",
+
+    // https://eslint.org/docs/rules/no-nested-ternary
+    "no-nested-ternary": "error",
+
+    // http://eslint.org/docs/rules/no-unused-vars
+    "no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+
+    // http://eslint.org/docs/rules/no-var
+    "no-var": "error",
+
+    // http://eslint.org/docs/rules/prefer-const
+    "prefer-const": "error",
+
+    // https://eslint.org/docs/rules/prefer-arrow-callback
+    "prefer-arrow-callback": "error",
+
+    // http://eslint.org/docs/rules/new-cap
+    "new-cap": [
+      "error",
+      {
+        "capIsNewExceptions": [
+          "Collection",
+          "DropTarget",
+          "DragDropContext",
+          "DragSource",
+          "Map",
+          "List",
+          "OrderedMap",
+          "OrderedSet",
+          "Record",
+          "Seq",
+          "Set"
+        ]
+      }
+    ],
+
+    // https://eslint.org/docs/rules/object-shorthand
+    "object-shorthand": ["error", "properties"],
+
+    // https://eslint.org/docs/rules/no-useless-computed-key
+    "no-useless-computed-key": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
+    "react/jsx-no-undef": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
+    "react/no-direct-mutation-state": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+    "react/react-in-jsx-scope": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
+    "react/jsx-boolean-value": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
+    "react/jsx-no-duplicate-props": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
+    "react/jsx-key": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
+    "react/jsx-uses-react": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md
+    "react/jsx-uses-vars": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
+    "react/no-unknown-property": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+    "react/prop-types": [
+      "error",
+      {
+        "ignore": ["children", "className"]
+      }
+    ],
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
+    "react/jsx-no-target-blank": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md
+    "react/no-string-refs": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
+    "react/boolean-prop-naming": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
+    "react/forbid-foreign-prop-types": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
+    "react/no-is-mounted": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
+    "react/no-render-return-value": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
+    "react/void-dom-elements-no-children": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-typos.md
+    "react/no-typos": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md
+    "react/no-access-state-in-setstate": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
+    "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
+    "react/no-unused-prop-types": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
+    "react/no-find-dom-node": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
+    "react/prefer-es6-class": "error",
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
+    "react/no-deprecated": "error",
+    "emotion/jsx-import": "error",
+    "emotion/no-vanilla": "error",
+    "emotion/import-from-emotion": "error",
+    "emotion/styled-import": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "packages/**/gatsby-browser.js",
+        "packages/gatsby/cache-dir/**/*"
+      ],
+      "env": {
+        "browser": true
+      },
+      "globals": {
+        "___loader": false,
+        "___emitter": false
+      }
+    }
+  ]
+}

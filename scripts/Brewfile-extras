@@ -1,0 +1,34 @@
+
+brew "fzf"
+brew "httpie"
+brew "the_silver_searcher"
+brew "tmux"
+brew "tree"
+brew "z"
+# brew "circleci", ignore-dependencies
+
+cask "macdown"
+cask "paw"
+cask "postman"
+cask "wireshark"
+cask "iterm2"
+
+# Manage multiple Node.js versions
+#brew "nvm"
+
+# Platform built on V8 to build network applications
+#brew "node@8"
+
+#cask "java" unless system "/usr/libexec/java_home --failfast"
+
+mas "Slack", id: 803453959
+
+cask "1password"
+cask "1password-cli"
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'qlstephen'

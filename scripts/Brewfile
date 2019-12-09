@@ -1,0 +1,68 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+
+# utils
+cask "1password-cli"
+brew "autoenv"
+brew "awscli"
+brew "bash"
+brew "cocoapods"
+brew "docker"
+brew "docker-compose"
+brew "git"
+brew "gnu-which"
+brew "jq"
+brew "parallel"
+brew "pstree"
+brew "python"
+brew "shellcheck"
+brew "tcpkali"
+brew "tcpreplay"
+brew "telnet"
+brew "terraform"
+brew "watch"
+
+# VCS
+brew "git"
+brew "pre-commit"
+brew "mercurial" # a pre-req of gvm
+
+# Golang
+brew "dep"
+tap "golangci/tap"
+brew "golangci/tap/golangci-lint"
+tap "goreleaser/tap"
+brew "goreleaser/tap/goreleaser"
+
+# other langs
+brew "python"
+brew "python@2"
+brew "node@8"
+brew "ruby", link: true
+## Note "without-node" option is no longer available: https://discourse.brew.sh/t/brew-install-yarn-without-node-busted/4087/5
+brew "yarn"
+
+# Docker
+cask "docker"
+cask "kitematic"
+brew "docker-compose"
+
+# AWS
+brew "awscli"
+brew "s3cmd"
+
+# osx/ios dev
+brew "cocoapods"
+
+# services
+brew "postgresql"
+brew "redis"
+
+#######
+#brew "ansible"
+# this is deprecated https://github.com/go-delve/homebrew-delve
+#tap "go-delve/delve"
+#brew "delve"
+#brew "bash"
