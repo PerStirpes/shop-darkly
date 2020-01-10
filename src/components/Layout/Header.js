@@ -1,10 +1,10 @@
+import { breakpoints, fonts, colors, dimensions, spacing } from '../../utils/styles';
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Logo from './Logo';
 
-import { breakpoints, colors, dimensions, spacing } from '../../utils/styles';
 
 const HeaderRoot = styled('header')`
   align-items: center;
@@ -39,9 +39,15 @@ const HomeLink = styled(Link)`
 // Fix this route
 const AllMerchandiseLink = styled(Link)`
   display: block;
+  color: ${colors.brandDark};
+  font-family: ${fonts.body};
+  font-size: 1rem;
+  text-decoration: none; 
   flex-shrink: 0;
   line-height: 1;
   margin-right: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
 `;
 
 class Header extends Component {
