@@ -1,8 +1,7 @@
 
-
 <p align="center">
   <a href="https://laucnhdarkly.com">
-    <img alt="LaunchDarkly" src="https://launchdarkly.com/img/favicon.ico" width="60" />
+    <img alt="LaunchDarkly" src="https://launchdarkly.com/features/feature-flags/img/favicon-dark.ico" width="60" />
   </a>
 </p>
 
@@ -37,6 +36,6 @@ Any style changes should live-reload.
 
 This is the LaunchDarkly store, where we make swag, stickers, and other LaunchDarkly goodies available to contributors and LaunchDarkly enthusiasts. 
 
-See it live: [ldstore.now.sh](https://ldswag.now.sh)
+See it live: [ld.click/dark-everything](https://ld.click/dark-everything)
 
 
