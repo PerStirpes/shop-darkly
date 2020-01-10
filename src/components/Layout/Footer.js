@@ -55,23 +55,14 @@ const Footer = () => (
       <b>Got questions?&nbsp;</b>
     </Row>
     <Row>
-      Talk to us on Twitter{' '}
-      <a href="https://twitter.com/launchdarkly">@launchdarkly</a>
-    </Row>
-    <Row>
       &nbsp;or send an email to{' '}
-      <a href="mailto:support@launchdarkly.com">team@launchdarkly.com</a>
+      <a href="mailto:mccarl+store@asu.edu">Get ahold of us</a>
     </Row>
     <Spacer>•</Spacer>
     <Row>
-      Forked and Re-Built with 🚩 by the{' '}
-      <a href="https://www.launchdarkly.com/">LaunchDarkly Team</a>
-    </Row>
-    <Spacer>•</Spacer>
-    <Row>
-      See the original source code on{' '}
-      <a href="https://github.com/LaunchDarkly/store.LaunchDarkly.com">
-        GitHub
+      See source code here{' '}
+      <a href="https://github.com/PerStirpes/shop-darkly">
+        
       </a>
     </Row>
   </FooterRoot>
