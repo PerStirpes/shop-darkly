@@ -39,6 +39,7 @@ const HomeLink = styled(Link)`
 // Fix this route
 const AllMerchandiseLink = styled(Link)`
   display: block;
+  margin-right: 25px;
   color: ${colors.brandDark};
   font-family: ${fonts.body};
   font-size: 1rem;
@@ -84,7 +85,7 @@ class Header extends Component {
         <HomeLink to="/" aria-label="Home page">
           <Logo />
         </HomeLink>
-        <AllMerchandiseLink to="/allmerchdise" aria-label="All Merchandise page"> Merchandise Overview</AllMerchandiseLink>
+        <AllMerchandiseLink to="/allmerchdise" aria-label="All Merchandise page"> Merchandise</AllMerchandiseLink>
       </HeaderRoot>
     );
   }
