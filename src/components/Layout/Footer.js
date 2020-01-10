@@ -60,10 +60,7 @@ const Footer = () => (
     </Row>
     <Spacer>•</Spacer>
     <Row>
-      See source code here{' '}
-      <a href="https://github.com/PerStirpes/shop-darkly">
-        
-      </a>
+      <a href="https://github.com/PerStirpes/shop-darkly">See source code here{' '}</a>
     </Row>
   </FooterRoot>
 );
