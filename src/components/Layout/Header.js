@@ -45,7 +45,6 @@ const AllMerchandiseLink = styled(Link)`
   text-decoration: none; 
   flex-shrink: 0;
   line-height: 1;
-  margin-right: auto;
   font-size: 1.1rem;
   line-height: 1.6;
 `;
