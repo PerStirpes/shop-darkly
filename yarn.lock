@@ -814,14 +814,6 @@
     "@babel/helper-create-regexp-features-plugin" "^7.7.4"
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/polyfill@7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.6.0.tgz#6d89203f8b6cd323e8d946e47774ea35dc0619cc"
-  integrity sha512-q5BZJI0n/B10VaQQvln1IlDK3BTBJFbADx7tv+oXDPIDZuTo37H5Adb9jhlXm/fEN4Y7/64qD9mnrJJG7rmaTw==
-  dependencies:
-    core-js "^2.6.5"
-    regenerator-runtime "^0.13.2"
-
 "@babel/polyfill@^7.7.0":
   version "7.7.0"
   resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.7.0.tgz#e1066e251e17606ec7908b05617f9b7f8180d8f3"
@@ -2550,12 +2542,7 @@ base64-arraybuffer@0.1.5:
   resolved "https://registry.yarnpkg.com/base64-arraybuffer/-/base64-arraybuffer-0.1.5.tgz#73926771923b5a19747ad666aa5cd4bf9c6e9ce8"
   integrity sha1-c5JncZI7Whl0etZmqlzUv5xunOg=
 
-base64-js@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
-  integrity sha512-ccav/yGvoa80BQDljCxsmmQ3Xvx60/UpBIij5QN21W3wBi/hhIC9OoO+KLpu9IJTS9j4DRVJ3aDDF9cMSoa2lw==
-
-base64-js@^1.0.2:
+base64-js@^1.0.2, base64-js@^1.3.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.1.tgz#58ece8cb75dd07e71ed08c736abc5fac4dbf8df1"
   integrity sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g==
@@ -5379,7 +5366,7 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
-fast-deep-equal@2.0.1, fast-deep-equal@^2.0.1:
+fast-deep-equal@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
   integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
@@ -8143,30 +8130,29 @@ latest-version@^5.0.0:
   dependencies:
     package-json "^6.3.0"
 
-launchdarkly-js-client-sdk@2.15.1:
-  version "2.15.1"
-  resolved "https://registry.yarnpkg.com/launchdarkly-js-client-sdk/-/launchdarkly-js-client-sdk-2.15.1.tgz#7f691e44b1a82baae994929fa9f385f40fc7e893"
-  integrity sha512-XJ+F51bHNFKJU3IWQnTfTyUT3LElAld5UddM+t/B0nSWJkdEEAAxDWtMIoSmw6q+NwyUYYWHvJogYPXQQJBiPw==
+launchdarkly-js-client-sdk@2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/launchdarkly-js-client-sdk/-/launchdarkly-js-client-sdk-2.17.0.tgz#7be9f1b12f7a0ea90ba9dfed73d076e97b78656a"
+  integrity sha512-KLKFtud5k9tH2BsaCf7dNyfqaHM4MITLQbriDpqi5zYDAhNYh6qZRIuriCTOohhw0/0GoA+oMHDhI4zDQ7nVww==
   dependencies:
-    escape-string-regexp "1.0.5"
-    launchdarkly-js-sdk-common "2.14.1"
+    escape-string-regexp "^1.0.5"
+    launchdarkly-js-sdk-common "3.2.2"
 
-launchdarkly-js-sdk-common@2.14.1:
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/launchdarkly-js-sdk-common/-/launchdarkly-js-sdk-common-2.14.1.tgz#d8fd9c28e346795096f0a2d2788113b907962ba0"
-  integrity sha512-uzecXPbmbwmed2LcTrnUu+dhQSCLdAU6+Fz7V136PKXR71TbfaxWsTcUTD0ZXTFXGYLFjXTtsEDUykJA/oGP5Q==
+launchdarkly-js-sdk-common@3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/launchdarkly-js-sdk-common/-/launchdarkly-js-sdk-common-3.2.2.tgz#26f8a8bcf8e3391e3bf6fdf72e5883d3cc8a9c7d"
+  integrity sha512-WBIMk3c1s3JGpSvDRZpDr0D4dDPsFkscDmcOoaoXnkW6PdacfUz9KKJ9bKTM+akNWE2DsZ3ttEz4rATEFeOnVA==
   dependencies:
-    "@babel/polyfill" "7.6.0"
-    base64-js "1.3.0"
-    fast-deep-equal "2.0.1"
-    uuid "3.3.2"
+    base64-js "^1.3.0"
+    fast-deep-equal "^2.0.1"
+    uuid "^3.3.2"
 
-launchdarkly-react-client-sdk@2.15.1:
-  version "2.15.1"
-  resolved "https://registry.yarnpkg.com/launchdarkly-react-client-sdk/-/launchdarkly-react-client-sdk-2.15.1.tgz#8bf5ae046734debef831d02f190bde9726dd5724"
-  integrity sha512-dHrgrcA/dz3r78I4b7JFQN8y/69gMmUxq7/Hc7ZntUJP7kY0R/Lg/tWIcendv9dOLlnmhdv+3wzpoNuJJ7t0vw==
+launchdarkly-react-client-sdk@2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/launchdarkly-react-client-sdk/-/launchdarkly-react-client-sdk-2.18.0.tgz#7563878ae9768ba227f2bdd6779f88dde1f7eebd"
+  integrity sha512-g4jyNbDSL4qptnV9Hmca8b1Z/bXiF1GXVuEa6pISNSo4pdnPgKYjUshjiRIBq1hoi3+oO4PPQhS5DxdVSf6lVA==
   dependencies:
-    launchdarkly-js-client-sdk "2.15.1"
+    launchdarkly-js-client-sdk "2.17.0"
     lodash.camelcase "^4.3.0"
     uuid "^3.3.2"
 
@@ -13563,11 +13549,6 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
-
-uuid@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
-  integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
 uuid@3.3.3, uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2, uuid@^3.3.3:
   version "3.3.3"
