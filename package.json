@@ -67,7 +67,7 @@
     "now-build": "yarn build"
   },
   "devDependencies": {
-    "eslint-plugin-emotion": "^10.0.7",
+    "eslint-plugin-emotion": "^10.0.27",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "husky": "^1.3.1",
