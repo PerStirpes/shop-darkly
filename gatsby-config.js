@@ -1,11 +1,14 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://store.launchdarkly.com',
+    siteUrl: 'https://shop-darkly.now.sh',
     title: 'Ship Faster with Confidence! Get your LaunchDarkly swag here!',
+    social: {
+      twitter: 'launchdarkly',
+    },
     description:
       'Do you like to launch in the dark? All DARK everything? Hitting #trajectory? Have we got the swag store for you!',
   },
@@ -17,6 +20,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-shopify',
       options: {
@@ -30,11 +34,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'LaunchDarkly Store', // TODO
-        short_name: 'LaunchDarkly Store', // TODO
+        name: 'Dark Store',
+        short_name: 'Dark Store',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#663399',
+        theme_color: '#000000',
         display: 'minimal-ui',
         icon: 'static/android-chrome-512x512.png',
       },
@@ -43,9 +47,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-132917172-2', // TODO SWAP OUT
+        trackingId: 'UA-157607575-1',
         respectDNT: false,
       },
     },
   ],
-};
+}

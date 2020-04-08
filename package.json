@@ -1,7 +1,7 @@
 {
   "name": "shop-darkly",
   "description": "LaunchDarkly store for swag and other LaunchDarkly goodies.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "author": "You",
   "dependencies": {
@@ -18,9 +18,9 @@
     "gatsby-plugin-google-analytics": "2.2.2",
     "gatsby-plugin-layout": "1.2.1",
     "gatsby-plugin-manifest": "2.3.3",
-    "gatsby-plugin-offline": "2.0.24",
+    "gatsby-plugin-offline": "3.1.2",
     "gatsby-plugin-react-helmet": "3.2.1",
-    "gatsby-plugin-sharp": "2.5.4",
+    "gatsby-plugin-sharp": "^2.5.4",
     "gatsby-source-shopify": "^3.1.2",
     "gatsby-transformer-sharp": "^2.4.4",
     "launchdarkly-react-client-sdk": "2.18.0",
@@ -54,14 +54,13 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "serve": "gatsby serve",
-    "develop": "gatsby develop",
+    "clean": "gatsby clean",
     "format": "prettier --write src/**/*.js",
+    "serve": "gatsby serve",
     "shame": "eslint .",
-    "start": "yarn run develop",
-    "test": "yarn run stylelint",
+    "start": "gatsby develop",
     "stylelint": "stylelint './src/**/*.js'",
-    "now-build": "yarn build"
+    "test": "yarn run stylelint"
   },
   "devDependencies": {
     "eslint-plugin-emotion": "^10.0.27",

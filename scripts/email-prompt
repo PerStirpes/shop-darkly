@@ -1,8 +1,0 @@
-function email_prompt() {
-    while [[ -z "$EMAIL_ID" ]]
-    do
-        read -p 'Enter your email ID (as in ID@launchdarkly.com): ' EMAIL_ID
-    done
-    EMAIL_ID=${EMAIL_ID%@*} # drop the domain if they entered it
-    EMAIL_ADDR=$EMAIL_ID@launchdarkly.com
-}

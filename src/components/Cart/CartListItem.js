@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
-import styled from '@emotion/styled';
+import React, { useState } from 'react'
+import styled from '@emotion/styled'
 
-import { MdClose } from 'react-icons/md';
+import { MdClose } from 'react-icons/md'
 
-import CartThumbail from './CartThumbail';
-import { Input } from '../shared/FormElements';
-import { Button } from '../shared/Buttons';
+import CartThumbail from './CartThumbail'
+import { Input } from '../shared/FormElements'
+import { Button } from '../shared/Buttons'
 
-import { breakpoints, colors, spacing } from '../../utils/styles';
+import { breakpoints, colors, spacing } from '../../utils/styles'
 
 const CartListItemRoot = styled('li')`
   align-items: center;
@@ -16,30 +16,30 @@ const CartListItemRoot = styled('li')`
   display: flex;
   justify-content: space-between;
   padding: ${spacing.md}px 0;
-`;
+`
 
 const Thumbail = styled(CartThumbail)`
   flex-grow: 0;
   margin-left: ${spacing['2xs']}px;
   margin-right: ${spacing.sm}px;
-`;
+`
 
 const Info = styled('div')`
   flex-grow: 1;
-`;
+`
 
 const Name = styled('span')`
   display: block;
   font-size: 1rem;
   line-height: 1.2;
-`;
+`
 
 const Meta = styled('span')`
   color: ${colors.textLight};
   display: block;
   font-size: 0.95rem;
   font-style: normal;
-`;
+`
 
 const Quantity = styled(Input)`
   flex-grow: 0;
@@ -52,7 +52,7 @@ const Quantity = styled(Input)`
   @media (min-width: ${breakpoints.desktop}px) {
     width: 70px;
   }
-`;
+`
 
 const Remove = styled(Button)`
   border: 1px dotted ${colors.textLighter};
@@ -68,68 +68,59 @@ const Remove = styled(Button)`
     margin: 0;
     width: 24px;
   }
-`;
+`
 
-export default ({
-  item,
-  setCartLoading,
-  updateQuantity,
-  handleRemove,
-  isCartLoading,
-}) => {
-  const [quantity, setQuantity] = useState(1);
+export default ({ item, setCartLoading, updateQuantity, handleRemove, isCartLoading }) => {
+  const [quantity, setQuantity] = useState(1)
 
   if (item.quantity !== quantity && quantity !== '' && !isCartLoading) {
-    setQuantity(item.quantity);
+    setQuantity(item.quantity)
   }
 
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     if (isCartLoading) {
-      return;
+      return
     }
 
-    const value = event.target.value;
+    const value = event.target.value
 
     // Make sure the quantity is always at least 1.
-    const safeValue = Math.max(Number(value), 0);
+    const { max } = Math
+    const safeValue = max(Number(value), 0)
 
     // No need to update if the value hasn’t updated.
     if (value === quantity) {
-      return;
+      return
     }
 
     // If the field is empty, update the state but don’t do anything else.
     if (value === '') {
-      setQuantity(value);
-      return;
+      setQuantity(value)
+      return
     }
 
     // Otherwise, trigger the loading state and set the quantity in state.
-    setCartLoading(true);
-    setQuantity(safeValue);
+    setCartLoading(true)
+    setQuantity(safeValue)
 
     // If the quantity is set to 0, remove the item.
     if (safeValue === 0) {
-      handleRemove(event);
-      return;
+      handleRemove(event)
+      return
     }
 
     // If we get here, update the quantity.
-    updateQuantity(safeValue);
-  };
+    updateQuantity(safeValue)
+  }
 
-  const handleRemoveItem = event => {
-    setCartLoading(true);
-    handleRemove(event);
-  };
+  const handleRemoveItem = (event) => {
+    setCartLoading(true)
+    handleRemove(event)
+  }
 
   return (
     <CartListItemRoot>
-      <Thumbail
-        id={item.variant.image.id}
-        fallback={item.variant.image.src}
-        alt={item.variant.image.altText}
-      />
+      <Thumbail id={item.variant.image.id} fallback={item.variant.image.src} alt={item.variant.image.altText} />
       <Info>
         <Name>{item.title}</Name>
         <Meta>
@@ -143,7 +134,7 @@ export default ({
         name="quantity"
         min="1"
         step="1"
-        onChange={event => handleInputChange(event)}
+        onChange={(event) => handleInputChange(event)}
         onBlur={() => setQuantity(item.quantity)}
         value={quantity}
       />
@@ -151,5 +142,5 @@ export default ({
         <MdClose />
       </Remove>
     </CartListItemRoot>
-  );
-};
+  )
+}
