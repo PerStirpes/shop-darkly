@@ -3,7 +3,7 @@ import React from 'react'
 export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
   const amplitudeScript = (
     <script
-      key={`amplitude-analytics`}
+      key={'amplitude'}
       dangerouslySetInnerHTML={{
         __html: `(function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
   ;r.type="text/javascript"
