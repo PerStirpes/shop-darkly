@@ -1,4 +1,4 @@
-import { keyframes } from '@emotion/core';
+import { keyframes, css } from '@emotion/core'
 
 /*
  * NOTE: use a six-character hex code for all colors to allow alpha channel
@@ -26,7 +26,7 @@ export const colors = {
   error: '#ec1818',
   lemon: '#D2E6EF',
   gift: '#98B8FE',
-};
+}
 
 export const spacing = {
   '3xs': 2,
@@ -38,7 +38,7 @@ export const spacing = {
   xl: 32,
   '2xl': 40,
   '3xl': 48,
-};
+}
 
 export const breakpoints = {
   mobile: 400,
@@ -46,12 +46,12 @@ export const breakpoints = {
   tablet: 750,
   desktop: 1000,
   hd: 1300,
-};
+}
 
 export const radius = {
   default: 2,
   large: 4,
-};
+}
 
 export const defaultFontStack = [
   '-apple-system',
@@ -64,7 +64,7 @@ export const defaultFontStack = [
   'Open Sans',
   'Helvetica Neue',
   'sans-serif',
-].join();
+].join()
 
 // const monospaceFontStack = [
 //   'Space Mono',
@@ -81,7 +81,7 @@ export const fonts = {
   body: `Libre Franklin, ${defaultFontStack}`,
   heading: `Libre Franklin, ${defaultFontStack}`,
   monospace: `Libre Franklin, ${defaultFontStack}`,
-};
+}
 
 // export const fonts = {
 //   body: defaultFontStack,
@@ -101,7 +101,7 @@ export const dimensions = {
     widthDesktop: '200px',
     heightMobile: '80px',
   },
-};
+}
 
 export const scrollbarStyles = {
   WebkitOverflowScrolling: 'touch',
@@ -109,22 +109,26 @@ export const scrollbarStyles = {
   '&::-webkit-scrollbar-thumb': { background: colors.brandBright },
   '&::-webkit-scrollbar-thumb:hover': { background: colors.lilac },
   '&::-webkit-scrollbar-track': { background: colors.brandLight },
-};
+}
 
 const simpleEntry = keyframes`
   from {
     opacity: 0;
     transform: translateY(20px);
   }
-`;
+`
 
 const deadSimpleEntry = keyframes`
   from {
     opacity: .25;
   }
-`;
+`
 
 export const animations = {
-  simpleEntry: `${simpleEntry} .75s ease forwards`,
-  deadSimpleEntry: `${deadSimpleEntry} .5s ease forwards`,
-};
+  simpleEntry: css`
+    ${simpleEntry} .75s ease forwards
+  `,
+  deadSimpleEntry: css`
+    ${deadSimpleEntry} .5s ease forwards
+  `,
+}

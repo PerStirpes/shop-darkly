@@ -1,8 +1,8 @@
 version: 2.1
 aliases:
-  node10: &node10
+  node10: &node13
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:13
   restore_node_modules: &restore_node_modules
     restore_cache:
       name: Restore node_modules cache
@@ -33,16 +33,16 @@ commands:
 
 jobs:
   lint:
-    <<: *node10
+    <<: *node13
     steps:
       - run_command:
-          command: "lint"
+          command: 'lint'
 
   test:
-    <<: *node10
+    <<: *node13
     steps:
       - run_command:
-          command: "test"
+          command: 'test'
 
 workflows:
   version: 2

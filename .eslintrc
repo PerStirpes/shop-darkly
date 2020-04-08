@@ -1,11 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier",
-    "prettier/react"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier", "prettier/react"],
   "plugins": ["prettier", "react", "emotion"],
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -42,11 +37,8 @@
     "max-lines-per-function": "off",
     "consistent-return": ["error"],
     "no-extra-semi": "error",
-    "arrow-body-style": [
-      "error",
-      "as-needed",
-      { "requireReturnForObjectLiteral": true }
-    ],
+    "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
+    "react/display-name": "off",
     "jsx-quotes": ["error", "prefer-double"],
     "object-curly-spacing": ["error", "always"],
     "no-duplicate-imports": "error",
@@ -165,12 +157,13 @@
     "react/no-unknown-property": "error",
 
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-    "react/prop-types": [
-      "error",
-      {
-        "ignore": ["children", "className"]
-      }
-    ],
+    "react/prop-types": "off",
+    // "react/prop-types": [
+    //   "error",
+    //   {
+    //     "ignore": ["children", "className"]
+    //   }
+    // ],
 
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
     "react/jsx-no-target-blank": "error",
@@ -220,10 +213,7 @@
   },
   "overrides": [
     {
-      "files": [
-        "packages/**/gatsby-browser.js",
-        "packages/gatsby/cache-dir/**/*"
-      ],
+      "files": ["packages/**/gatsby-browser.js", "packages/gatsby/cache-dir/**/*"],
       "env": {
         "browser": true
       },
