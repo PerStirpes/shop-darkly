@@ -45,8 +45,8 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
   )
 
   setHeadComponents([
-    <link rel="preconnect" href="https://cdn.amplitude.com" />,
-    <link rel="preconnect" href="https://api.amplitude.com" />,
+    <link key="preconnect-cdn" rel="preconnect" href="https://cdn.amplitude.com" />,
+    <link key="preconnect-api" rel="preconnect" href="https://api.amplitude.com" />,
   ])
 
   return setPostBodyComponents([amplitudeScript])
