@@ -1,7 +1,7 @@
 {
-  "name": "ldstore",
+  "name": "shop-darkly",
   "description": "LaunchDarkly store for swag and other LaunchDarkly goodies.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "author": "You",
   "dependencies": {
@@ -34,9 +34,6 @@
     "recompose": "0.30.0",
     "shopify-buy": "2.9.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --ignore-path .gitignore --ignore-path .prettierignore --fix",
@@ -49,10 +46,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged npm test || node on-lint-error.js",
-      "prepublish": "npm test",
-      "prepush": "npm test",
-      "test": "npm run lint"
+      "pre-commit": "lint-staged yarn test || node on-lint-error.js",
+      "prepublish": "yarn test",
+      "prepush": "yarn test",
+      "test": "yarn run shame"
     }
   },
   "scripts": {
@@ -61,8 +58,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.js",
     "shame": "eslint .",
-    "start": "npm run develop",
-    "test": "npm run stylelint",
+    "start": "yarn run develop",
+    "test": "yarn run stylelint",
     "stylelint": "stylelint './src/**/*.js'",
     "now-build": "yarn build"
   },
@@ -72,20 +69,17 @@
     "eslint-plugin-react": "^7.12.4",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
-    "prettier": "^1.16.4",
+    "prettier": "^2.0.4",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^2.0.0",
     "stylelint-processor-styled-components": "^1.5.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/PerStripes/store.git"
-  },
+  "repository": "https://github.com/PerStirpes/shop-darkly",
   "bugs": {
-    "url": "https://github.com/PerStripes/store/issues"
+    "url": "https://github.com/PerStirpes/shop-darkly/issues"
   },
-  "homepage": "https://github.com/PerStripes/store#readme",
+  "homepage": "https://github.com/PerStirpes/shop-darkly#readme",
   "main": "gatsby-browser.js"
 }
