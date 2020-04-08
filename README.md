@@ -7,6 +7,9 @@
   LaunchDarkly <a href="https://shop-darkly.now.sh">Dark Merchandise Store</a>
 </h1>
 
+
+## This is only a demo that was made for a hackathon project
+
 ## How to run
 
 ### Install the Gatsby CLI
