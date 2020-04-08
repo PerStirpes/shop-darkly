@@ -29,14 +29,14 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
   ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
   ;e.amplitude=n})(window,document);
 
- window.amplitude.getInstance("House of Balloons").init("4ebb04e4c3295149112446055bfcdce0", null, {
+ window.amplitude.getInstance().init("4ebb04e4c3295149112446055bfcdce0", null, {
     saveEvents: true,
     forceHttps: true,
     includeUtm: true,
     includeReferrer: true,
     includeGclid: true,
     includeReferrer: true,
-    platform: 'ecom site',
+    platform: "House of Balloons",
     unsetParamsReferrerOnNewSession: true,
   });
   `,
