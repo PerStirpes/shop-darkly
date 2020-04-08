@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "name": "ldstore",
   "public": true,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": { "distDir": "public" }
-    }
-  ],
+  "alias": "shop-darkly.now.sh",
+  "github": {
+    "autoAlias": true
+  },
+  "scope": "freeagent",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "public/404/index.html" },
     {
       "src": "^/public/static/(.*)",
       "headers": { "cache-control": "public,max-age=31536000,immutable" }
