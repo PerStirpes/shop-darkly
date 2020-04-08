@@ -6,11 +6,11 @@
     "autoAlias": true
   },
   "scope": "freeagent",
-  "cleanUrls": true,
-  "trailingSlash": false,
   "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "public/404/index.html" },
     {
-      "src": "/public/static/(.*)",
+      "src": "^/public/static/(.*)",
       "headers": { "cache-control": "public,max-age=31536000,immutable" }
     },
     {
@@ -20,8 +20,6 @@
     {
       "src": "^/(.*).html",
       "headers": { "cache-control": "public,max-age=0,must-revalidate" }
-    },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "public/404/index.html" }
+    }
   ]
 }

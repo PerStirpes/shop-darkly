@@ -55,11 +55,10 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "develop": "gatsby develop",
     "format": "prettier --write src/**/*.js",
     "serve": "gatsby serve",
     "shame": "eslint .",
-    "start": "yarn run develop",
+    "start": "gatsby develop",
     "stylelint": "stylelint './src/**/*.js'",
     "test": "yarn run stylelint"
   },
