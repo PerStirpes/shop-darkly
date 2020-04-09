@@ -19,18 +19,6 @@ module.exports = {
         component: require.resolve('./src/components/Layout/'),
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-source-shopify',
-      options: {
-        shopName: 'shoplaunchdarkly',
-        accessToken: '40396041283b1c78647c92daff6f30cd',
-        verbose: true,
-      },
-    },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -43,7 +31,33 @@ module.exports = {
         icon: 'static/android-chrome-512x512.png',
       },
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-emotion',
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-shopify',
+      options: {
+        shopName: 'shoplaunchdarkly',
+        accessToken: '40396041283b1c78647c92daff6f30cd',
+        verbose: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://shop-darkly.now.sh',
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+          },
+          production: {
+            policy: [{ userAgent: '*', disallow: '/' }],
+          },
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
