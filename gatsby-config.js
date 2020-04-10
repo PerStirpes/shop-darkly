@@ -31,6 +31,13 @@ module.exports = {
         icon: 'static/android-chrome-512x512.png',
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-157607575-1',
+        respectDNT: false,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
@@ -59,10 +66,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
       options: {
-        trackingId: 'UA-157607575-1',
-        respectDNT: false,
+        analyzerPort: 3000,
+        production: true,
       },
     },
   ],
