@@ -75,7 +75,7 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^2.0.0",
-    "stylelint-processor-styled-components": "^1.5.2"
+    "stylelint-processor-styled-components": "^1.10.0"
   },
   "repository": "https://github.com/PerStirpes/shop-darkly",
   "bugs": {
