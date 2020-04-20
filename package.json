@@ -13,7 +13,7 @@
     "eslint-config-prettier": "4.1.0",
     "gatsby": "2.20.18",
     "gatsby-cli": "2.11.5",
-    "gatsby-image": "2.3.2",
+    "gatsby-image": "2.3.4",
     "gatsby-plugin-emotion": "4.2.1",
     "gatsby-plugin-google-analytics": "2.2.2",
     "gatsby-plugin-layout": "1.2.1",
